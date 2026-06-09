@@ -32,6 +32,12 @@
   .flow .step b{display:block;color:#10233c;font-size:.92rem}
   .flow .step .who{font-size:.72rem;color:var(--accent-d);font-weight:600;margin:1px 0 6px}
   .flow .step p{margin:0;font-size:.82rem;color:var(--muted);line-height:1.6}
+  .procbox{border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:10px;background:#fbfdff;padding:14px 18px;margin:12px 0 6px}
+  .proctitle{font-weight:700;color:#10233c;margin-bottom:9px;font-size:.98rem}
+  .proc{margin:0;padding-left:20px}
+  .proc li{font-size:.9rem;color:var(--text);line-height:1.65;margin-bottom:8px}
+  .proc li:last-child{margin-bottom:0}
+  .procfoot{margin:11px 0 0;font-size:.88rem;color:var(--muted);background:#fff;border-top:1px dashed var(--line);padding-top:10px;line-height:1.65}
   @media(max-width:820px){
     .orgcard{grid-template-columns:1fr}
     .orgband{flex-direction:row;align-items:baseline;gap:8px}
@@ -107,12 +113,24 @@
   <h3>2단계 (2019~2021) — UN GTR No. 21 제정</h3>
   <p>EVE IWG가 출력 결정(DEVP)을 우선 과제로 분화한 뒤, <b>2020년 6월 AC.3가 독립 GTR 개발 권한을 부여</b>했다(ECE/TRANS/WP.29/AC.3/57). EVE IWG는 여러 방식을 검토한 끝에 <b>ISO 1585(엔진 순출력 시험코드) 기반</b> 방식이 비교성·검증성에서 최선이라고 합의했다. GRPE 검토를 거쳐 <b>WP.29 제182차 회의(2020.11.10~12, 제네바)에서 AC.3가 채택</b>했고, <b>2021년 1월 18일 UN GTR No. 21(DEVP)</b>로 글로벌 등록부에 등재(ECE/TRANS/180/Add.21)되며 <b>TP1/TP2 골격</b>이 확립됐다. 이후 <b>WP.29 제193차(2024.6)에서 Amendment 1</b>이 채택됐다(2024-08 등재).</p>
 
+  <div class="procbox">
+    <div class="proctitle">심화 — UN GTR 21 초안은 이렇게 만들어졌다</div>
+    <ol class="proc">
+      <li><b>2차 임기 Part B 돌입 (2016 하반기~)</b> — Phase 1과 2차 임기 Part A까지 정보 수집·연구에 집중하던 EVE 실무그룹이, Part B 단계에서 본격적인 <b>GTR 초안 작성 권한(맨데이트)</b>을 부여받았다.</li>
+      <li><b>DEVP 전담 서브그룹 결성</b> — 전동화 차량 시스템 출력 측정의 기술 난제를 풀기 위해 EVE 산하에 <b>DEVP</b>(Determination of Electrified Vehicle Power) 서브그룹을 두고, 미국 <b>EPA</b>·일본 <b>JASIC</b>·유럽위원회 <b>JRC</b>·캐나다(ECCC) 전문가가 참여했다. 2018년 <b>JRC 이스프라(이탈리아) 연구소</b>에서 실제 다이나모미터 측정시험을 수행했고(미·일 대표 및 Volvo·Hyundai 기술지원 참가) 초안의 뼈대를 완성했다.</li>
+      <li><b>WLTP 부록 → 독립 규정으로 선회</b> — 초기에는 이 측정법을 기존 WLTP 배출가스 규정 <b>UN GTR 15의 개정안(부록)</b> 형태로 만들 계획이었으나, 하이브리드 동력분배 로직이 복잡하고 방법론 분량이 방대해지면서 <b>독립 단일 규정(Standalone GTR)</b>으로 분리하기로 결정했다.</li>
+    </ol>
+    <p class="procfoot">완성된 DEVP 초안은 수차례 물리적 다이나모미터 검증을 거쳐 <b>2020년 11월 WP.29 총회에서 UN GTR 21</b>로 최종 승인됐다. 한편 규정 제정 이후 현재(2026년) EVE 실무그룹은 <b>Phase 4</b>에 진입해, 제정된 GTR 21을 <b>수소연료전지차(FCEV)·고도 통합 시스템</b>에 적용하기 위한 후속 개정 작업을 진행 중이다.</p>
+  </div>
+
   <h3>3단계 (2024~2025) — UN R177로 전환</h3>
   <p>GTR(1998협정)은 상호인정이 없고 각국이 자국법으로 옮겨야 효력이 생긴다. 형식승인·상호인정이 작동하는 <b>구속력 있는 규정</b>을 위해 GTR 21을 1958협정으로 이식한 것이 UN R177이다(작업문서 ECE/TRANS/WP.29/2025/25). <b>WP.29 195차(2025.3.4~7)</b>에서 채택(AC.1 표결 찬성 36·반대 0·기권 0), <b>2025년 9월 27일 발효</b>했다.</p>
 
   <div class="timeline">
     <div class="tl"><div class="d">2012.03</div><div class="e">EVE IWG 설치 — WP.29 승인 (미·일·EU 제안, 이후 중국·캐나다 합류 / GRPE 산하)</div></div>
     <div class="tl"><div class="d">2014</div><div class="e">전기차 환경규제 'Reference Guide' 발간 (EVE 1단계 성과)</div></div>
+    <div class="tl"><div class="d">2016 하반기</div><div class="e">EVE 2차 임기 Part B 돌입 — GTR 초안 작성 권한 · DEVP 서브그룹 결성 (EPA·JASIC·JRC·ECCC)</div></div>
+    <div class="tl"><div class="d">2018</div><div class="e">JRC 이스프라(이탈리아) 다이나모미터 검증시험 (Volvo·Hyundai 기술지원)</div></div>
     <div class="tl"><div class="d">2020.06</div><div class="e">DEVP 독립 GTR 개발 권한 부여 (AC.3, ECE/TRANS/WP.29/AC.3/57) · ISO 1585 기반 방식 합의</div></div>
     <div class="tl"><div class="d">2020.11</div><div class="e">GTR 채택 — <b>WP.29 제182차</b> (AC.3, 제네바 11.10~12)</div></div>
     <div class="tl"><div class="d">2021.01.18</div><div class="e">UN GTR No. 21 (DEVP) 글로벌 등록부 등재 (ECE/TRANS/180/Add.21)</div></div>
