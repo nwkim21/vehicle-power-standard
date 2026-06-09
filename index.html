@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>규정 이해 — UN R177 정보 허브</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="index">
+<div class="layout">
+<aside id="sidebar"></aside>
+<main>
+
+<div class="hero">
+  <div class="kick">UN Regulation No. 177 · System Power</div>
+  <h1>전동화차량 시스템 출력 국제기준, R177</h1>
+  <p>하이브리드(HEV)와 다중 전동기 순수전기차(PEV)의 "시스템 출력"을 표준화·비교 가능하게 결정하기 위한 UN 협정규칙. 이 페이지는 규정 자체의 이해(개요·구성·적용대상·시험절차·시험조건)를 다룹니다. 배경·동향·국내도입은 좌측 메뉴에서 확인하세요.</p>
+  <div class="chips">
+    <span class="chip">발효 2025-09-27</span>
+    <span class="chip">1958 협정 · 형식승인+상호인정</span>
+    <span class="chip">TP1 · TP2 병존</span>
+    <span class="chip">대상 HEV·다중모터 PEV (M·N1 ≤3.5t)</span>
+    <span class="chip">E/ECE/TRANS/505/Rev.3/Add.176</span>
+  </div>
+</div>
+
+<div class="content">
+
+<section id="overview">
+  <h2><span class="num">1</span>개요</h2>
+  <p class="lead">왜 필요했나 — 전동화로 "출력"의 정의가 무너졌다.</p>
+  <p>내연기관 단일 동력 시대에는 <b>엔진 정격출력 = 차량 출력</b>이라는 등식이 성립했다. 그러나 전동화로 엔진·모터·배터리가 혼재되고, 동력이 효율이 서로 다른 여러 경로로 갈라지면서 각 동력원의 출력을 <b>단순 합산하는 것이 불가능</b>해졌다. 더구나 엔진 또는 모터의 <b>개별 출력만 표시하는 방식</b>은 시스템 전체 성능을 오해하게 만든다. UN R177은 이 문제를 풀기 위해, 실험실에서 차량을 최대출력 조건으로 구동해 <b>재현 가능하고 비교 가능한 "시스템 출력"</b>을 산출하는 표준 절차를 규정한다.</p>
+  <div class="grid g3">
+    <div class="card"><h4>문제</h4><p>동력원 혼재·동력 분기로 단순 합산 불가. 개별출력 표시는 오해 유발. PS·kW·bhp 단위 혼재(1 kW=1.341 PS)와 측정조건 편차까지 겹쳐 소비자 혼란.</p></div>
+    <div class="card"><h4>해법</h4><p>고정속도·가속페달 최대 10초 조건에서 출력을 측정·산출. 결과는 종래 엔진 정격출력과 정성·정량적으로 비교 가능하도록 설계(규정 §1.4).</p></div>
+    <div class="card"><h4>효과</h4><p>소비자 알 권리·선택권 보장, 글로벌 규제 정합성·상호인정 확보, 제도 기반 마련. 림모터 등 분산동력 차량 확산에 대비.</p></div>
+  </div>
+  <div class="callout info"><b>한 줄 정의</b> — UN R177은 "HEV 및 2개 이상의 전동기를 가진 PEV의 <b>시스템 출력</b>을 결정·인증하기 위한 1958협정 규칙"이며, 2025년 9월 27일 발효되었다.</div>
+</section>
+
+<section id="structure">
+  <h2><span class="num">2</span>규정 구성</h2>
+  <p class="lead">본문 15개 조 + 5개 부속서(Annex)로 구성된다.</p>
+  <table>
+    <thead><tr><th>구분</th><th>조/부속서</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td rowspan="5">본문</td><td>1~3조</td><td>적용 범위 · 약어 · 정의</td></tr>
+      <tr><td>4~6조</td><td>승인 신청 · 승인 · 표시(승인마크)</td></tr>
+      <tr><td>7조</td><td>시험 조건(계측·정확도)</td></tr>
+      <tr><td>8조</td><td><b>시험 절차(TP1/TP2)</b> — 규정의 핵심</td></tr>
+      <tr><td>9~15조</td><td>형식 내 패밀리 · 변경/확장 · 생산적합성 · 벌칙 · 경과조치 · 기술기관</td></tr>
+      <tr><td rowspan="5">부속서</td><td>Annex 1</td><td>엔진·차량 제원 및 시험 정보(정보문서) + 시험성적서</td></tr>
+      <tr><td>Annex 2</td><td>통보 양식(Communication)</td></tr>
+      <tr><td>Annex 3</td><td>승인마크 배열</td></tr>
+      <tr><td>Annex 4</td><td><b>출력 결정 기준점(reference point) 식별</b> — 구조별 가이드</td></tr>
+      <tr><td>Annex 5</td><td>최대출력 속도 결정</td></tr>
+    </tbody>
+  </table>
+  <div class="src"><b>출처</b> R177 원문 목차(E/ECE/TRANS/505/Rev.3/Add.176)</div>
+</section>
+
+<section id="scope">
+  <h2><span class="num">3</span>적용 대상 · 핵심 정의</h2>
+  <p class="lead">규정은 "시스템 출력 산정이 까다로운" 차량만 정조준한다.</p>
+  <h3>적용 대상 (제1조) — 아래 (a)(b)(c) 모두 충족</h3>
+  <ul>
+    <li><b>(a)</b> 하이브리드차(HEV)이거나, 추진 에너지변환기가 <b>2개 이상</b>인 순수전기차(PEV)</li>
+    <li><b>(b)</b> N1류이거나, M류 중 <b>최대적재중량 3,500kg 이하</b></li>
+    <li><b>(c)</b> HEV인 경우, 최대출력 조건에서 <b>최소 1개의 전동기가 구동에 기여</b></li>
+  </ul>
+  <div class="callout warn"><b>제외</b> — 연료전지차(FCV)는 적용 대상이 아니다(§1.2). 단일 동력원 차량(내연기관차, 단일모터 BEV)은 기존 UN R85 체계로 충분하므로 사실상 제외된다.</div>
+  <h3>핵심 용어</h3>
+  <table>
+    <thead><tr><th>용어</th><th>의미</th></tr></thead>
+    <tbody>
+      <tr><td>출력 결정 기준점<br>(Reference point, §3.5.3)</td><td>바퀴를 구동하는 기계에너지가 에너지저장장치로부터 <b>최초로 기계에너지로 생성되는 지점</b>. 종래차의 엔진 출력축에 해당. 시스템 출력 = 모든 기준점 통과 출력의 합.</td></tr>
+      <tr><td>최대출력 조건(§3.5.6)</td><td>power-rating 모드 + 동력계 고정속도(최대출력속도) + 가속페달 최대지령 <b>10초 이상</b>.</td></tr>
+      <tr><td>피크 시스템 출력(§3.5.9)</td><td>10초 측정구간에 <b>2초 이동평균</b> 필터를 적용한 최댓값.</td></tr>
+      <tr><td>지속 시스템 출력(§3.5.10)</td><td>측정구간 <b>8~10초 구간 평균</b>.</td></tr>
+      <tr><td>K1 / K2</td><td>측정 지점과 실제 기준점 사이 손실을 보정하는 <b>효율계수</b>(K1=전기, K2=기계). 제작사가 제공하며 인증기관이 검증.</td></tr>
+      <tr><td>REESS</td><td>재충전식 전기에너지 저장장치(구동용 배터리).</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="procedure">
+  <h2><span class="num">4</span>시험 절차 — TP1 · TP2</h2>
+  <p class="lead">기술적으로 등가인 두 절차를 두고, 차량 구조에 따라 선택한다(둘 다 가능하면 제작사 선택).</p>
+  <h3>TP1 — 전기 계측 기반</h3>
+  <p>인버터 또는 배터리(REESS) 입력단의 전압·전류로 전기측 출력을 측정하고, 내연기관 출력은 직접 측정 대신 <b>UN R85 또는 ISO 1585의 전부하 출력곡선</b>을 참조해 산정한다(연료유량·흡기관압력이 인증값과 ±5% 이내면 곡선값 사용, 초과 시 해당 조건으로 재시험). 측정값에는 효율계수 <b>K1</b>을 적용한다.</p>
+  <div class="formula">R [kW] = ( U×I / 1000  −  P_DCDC  −  P_aux ) × K1   ← REESS 출력단 측정 시
+R [kW] = ( U×I / 1000 ) × K1                          ← 인버터 입력단 측정 시</div>
+  <p>TP1은 K1 적용 형태에 따라 4가지 사례로 세분된다: ① 단일 전동기, ② 인버터별 K1(n), ③ 통합 효율계수 K1comb, ④ 분배율(DR) 적용. 어떤 구조든 기준점 출력을 산출할 식이 정의되어 있다.</p>
+  <h3>TP2 — 기계 계측 기반</h3>
+  <p>구동축 또는 휠허브에서 <b>토크·회전수를 직접 측정</b>하고 기계효율계수 <b>K2</b>를 적용한다. 차동기어를 통과하면 한쪽 축만 계측 후 ×2, 4WD는 양축 동시 측정한다.</p>
+  <div class="formula">R [kW] = ( 2π × 축회전수[rev·s⁻¹] × 축토크[Nm] / 1000 ) / K2</div>
+  <p>내연기관 분이 포함된 경우 ISO 1585 제6조에 따라 ICE 출력을 보정한다. 단 TP2는 ICE 출력을 분리해 주지 못하는 구조가 많아, 합산값에서 비ICE분(TP1으로 측정)을 빼서 P_ICE를 도출한 뒤 보정한다.</p>
+  <div class="callout warn"><b>★ TP2 적용 불가 구조 (Annex 4)</b> — <b>동력분기형(power-split, 예: Toyota Prius)</b>과 <b>순수 직렬형(series)</b>은 축에 도달한 출력이 <b>효율이 서로 다른 동력 흐름의 혼합</b>이라, 단일 축 출력 측정만으로 R1·R2를 분해할 수 없다. 이 경우 TP2는 적용 불가이며 TP1으로 수행해야 한다. 이것이 R177이 두 절차를 병존시키는 근본 이유다.</div>
+  <h4>구조별 기준점·적용성 (Annex 4 요약)</h4>
+  <table>
+    <thead><tr><th>구조</th><th>기준점</th><th>TP1</th><th>TP2</th></tr></thead>
+    <tbody>
+      <tr><td>병렬형(parallel)</td><td>R1(엔진)·R2(모터)</td><td>가능</td><td>가능</td></tr>
+      <tr><td>동력분기형(power-split)</td><td>R1·R2_REESS</td><td>가능</td><td><b>불가</b></td></tr>
+      <tr><td>순수 직렬형(series)</td><td>R1·R2_REESS</td><td>가능</td><td><b>불가</b></td></tr>
+      <tr><td>다축 구동</td><td>축별 R1·R2·R3</td><td>가능</td><td>가능(양축 동시)</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="conditions">
+  <h2><span class="num">5</span>시험 조건 · 시퀀스</h2>
+  <p class="lead">재현성 확보 장치가 촘촘하게 규정되어 있다.</p>
+  <h3>시험 조건 (제7조)</h3>
+  <ul>
+    <li>시험실 온도 <b>25°C ± 5°C</b>(제작사 요청 시 23°C), 대기압 80~110kPa, 냉각풍속 ±10%.</li>
+    <li>소킹 <b>6~36시간</b>, 길들이기 — HEV <b>3,000~15,000km</b>, PEV <b>300km 이상</b>.</li>
+    <li>계측 정확도(Table 2): 전압·전류 ±0.3%FSD 또는 ±1%, 축토크 ±6Nm 또는 ±0.5% 등. 측정주파수 <b>10Hz 이상</b>.</li>
+  </ul>
+  <h3>시험 시퀀스 (제8.8, Figure 23)</h3>
+  <p>초기충전(최대출력 SOC) → 소킹 → 장착 → <b>컨디셔닝(60km/h·20분)</b> → REESS 조정 → 모드 선택 → <b>출력시험(가속페달 최대 10초)</b> → <b>총 5회 반복</b> → 시스템 출력 산출.</p>
+  <h3>산출·검증의 "±5%" 세 가지 (혼동 주의)</h3>
+  <table>
+    <thead><tr><th>구분</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>① 재현성(§8.9.1)</td><td>2~5회차 4개 값의 평균 대비 <b>개별 편차 ≤ ±5%</b>, 초과 시 원인점검 후 재시험. 대표값=4회 평균.</td></tr>
+      <tr><td>② 선언값 인정(§8.10)</td><td>제작사 선언 피크/지속 출력이 시험기관 측정값과 <b>±5% 이내면 인정</b>.</td></tr>
+      <tr><td>③ 시험실 온도(§7.1.2)</td><td>25 ± 5°C.</td></tr>
+    </tbody>
+  </table>
+  <p>이와 별도로 <b>내부검증(§8.11)</b>: 기준점→노면 간 함의 하류효율 ≤ 1 (동력계 8~10초 평균출력 ÷ 지속 시스템출력).</p>
+  <div class="pagenav"><span></span><a href="history.html">다음: 제정의 역사 →</a></div>
+</section>
+
+</div>
+<footer>
+  자동차 시스템 출력 평가 국제기준 국내도입 연구 · 정보 허브 v0.3 (2026-06-08) · 한양대학교 ERICA<br>
+  본 페이지의 모든 사실은 1차 출처에 근거하며, ⚠️·"전망" 표시 항목은 확인 진행 중입니다.
+</footer>
+</main>
+</div>
+<script src="nav.js"></script>
+</body>
+</html>
