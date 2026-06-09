@@ -80,6 +80,14 @@ tr:nth-child(even) td{background:#fafcfe}
 .tl .e{color:var(--text)}
 .src{font-size:.82rem;color:var(--soft);margin-top:8px}
 .src b{color:var(--muted)}
+.reflinks{margin:26px 0 4px;border-top:1px solid var(--line);padding-top:14px}
+.reflinks h4{margin:0 0 9px;font-size:.78rem;color:var(--soft);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.reflinks ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.reflinks li{font-size:.85rem;line-height:1.5;padding-left:15px;position:relative;color:var(--muted)}
+.reflinks li::before{content:"↗";position:absolute;left:0;top:0;color:var(--accent);font-size:.78rem}
+.reflinks a{color:var(--accent)}
+.reflinks .m{color:var(--soft);font-size:.8rem}
+.reflinks .note{font-size:.78rem;color:var(--soft);margin:8px 0 0}
 .pagenav{display:flex;justify-content:space-between;gap:12px;margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:.9rem}
 .pagenav a{color:var(--accent)}
 footer{padding:26px 48px 60px;color:var(--soft);font-size:.85rem;background:var(--surface2)}
