@@ -5,6 +5,44 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>제정의 역사 — UN R177 정보 허브</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+  .govintro{font-size:.92rem;color:var(--muted);margin:0 0 16px}
+  .orgstack{margin:6px 0 8px}
+  .orgcard{display:grid;grid-template-columns:150px 1fr;border:1px solid var(--line);border-radius:12px;background:#fff;overflow:hidden}
+  .orgband{padding:14px 14px;color:#fff;display:flex;flex-direction:column;justify-content:center;gap:3px}
+  .orgband .tier{font-size:.72rem;opacity:.85;letter-spacing:.02em}
+  .orgband .lvl{font-size:1.35rem;font-weight:800;line-height:1.1}
+  .orgband .lvl small{display:block;font-size:.66rem;font-weight:500;opacity:.8;margin-top:2px}
+  .orgbody{padding:13px 18px}
+  .orgname{font-weight:700;color:#10233c;margin-bottom:5px}
+  .orgname span{display:block;font-size:.74rem;font-weight:500;color:var(--soft);letter-spacing:.01em}
+  .orgbody p{margin:0;font-size:.9rem;color:var(--text);line-height:1.65}
+  .t-wp .orgband{background:var(--sidebar)}
+  .t-grpe .orgband{background:#13507a}
+  .t-eve .orgband{background:var(--accent)}
+  .t-gtr .orgband{background:var(--teal)}
+  .orgarrow{text-align:center;color:var(--soft);font-size:1rem;line-height:1;margin:5px 0}
+  .orgarrow small{display:inline-block;font-size:.72rem;color:var(--soft);margin-left:6px;vertical-align:1px}
+  .flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;align-items:stretch;margin:8px 0 4px;counter-reset:f}
+  .flow .step{position:relative;border:1px solid var(--line);border-radius:11px;background:#fff;padding:13px 14px 14px;margin-right:18px}
+  .flow .step:last-child{margin-right:0}
+  .flow .step::after{content:"▶";position:absolute;right:-15px;top:50%;transform:translateY(-50%);color:var(--accent);font-size:.8rem}
+  .flow .step:last-child::after{content:""}
+  .flow .n{width:24px;height:24px;border-radius:50%;background:var(--accent);color:#fff;font-weight:700;font-size:.82rem;display:flex;align-items:center;justify-content:center;margin-bottom:7px}
+  .flow .step b{display:block;color:#10233c;font-size:.92rem}
+  .flow .step .who{font-size:.72rem;color:var(--accent-d);font-weight:600;margin:1px 0 6px}
+  .flow .step p{margin:0;font-size:.82rem;color:var(--muted);line-height:1.6}
+  @media(max-width:820px){
+    .orgcard{grid-template-columns:1fr}
+    .orgband{flex-direction:row;align-items:baseline;gap:8px}
+    .orgband .lvl{font-size:1.1rem}
+    .orgband .lvl small{display:inline;margin-left:6px}
+    .flow{grid-template-columns:1fr;gap:10px}
+    .flow .step{margin-right:0}
+    .flow .step::after{content:"▼";right:50%;top:auto;bottom:-15px;transform:translateX(50%)}
+    .flow .step:last-child::after{content:""}
+  }
+</style>
 </head>
 <body data-page="history">
 <div class="layout">
@@ -17,29 +55,76 @@
 <div class="content">
   <p class="lead">2012년 EVE IWG 출범 → UN GTR 21(2021) → UN R177(2025)으로 이어진 13년의 흐름.</p>
 
+  <h2><span class="num">A</span>규정을 만든 기구들 — 누가, 어떤 회의를 거쳤나</h2>
+  <p class="govintro">이 기준은 한 기관이 단독으로 만든 것이 아니라, UNECE 산하 <b>WP.29</b>를 정점으로 한 4단계 위계(포럼 → 전문분과 → 실무그룹 → 결과물)를 거쳐 탄생했다. 아래는 각 기구의 역할과, 본 규정이 통과한 실제 회의들이다.</p>
+
+  <div class="orgstack">
+    <div class="orgcard t-wp">
+      <div class="orgband"><span class="tier">① 최고 의사결정 기구</span><span class="lvl">WP.29<small>World Forum for Harmonization of Vehicle Regulations</small></span></div>
+      <div class="orgbody">
+        <div class="orgname">자동차 기준 조화 세계 포럼</div>
+        <p>UN 유럽경제위원회(UNECE) 산하의 글로벌 자동차 규제 포럼. 전 세계 자동차의 <b>안전·환경·에너지 기준을 통합·조화</b>하는 '자동차 업계의 UN 총회'로, 각국 정부 대표가 모여 하위 조직이 올린 기술규정(GTR 등)을 <b>최종 승인·채택</b>한다. 산하에 6개 전문분과(GRB 소음·GRE 등화·GRPE 오염·에너지·GRSG 일반안전·GRSP 충돌안전·GRVA 자율주행)를 둔다. 1998협정 GTR은 집행위원회 <b>AC.3</b>가, 1958협정 규정은 <b>AC.1</b>이 표결로 채택한다.</p>
+      </div>
+    </div>
+    <div class="orgarrow">▼<small>실무 결과를 상정·검토</small></div>
+    <div class="orgcard t-grpe">
+      <div class="orgband"><span class="tier">② 분야별 총괄 부서</span><span class="lvl">GRPE<small>Working Party on Pollution and Energy</small></span></div>
+      <div class="orgbody">
+        <div class="orgname">오염 및 에너지 전문 분과</div>
+        <p>WP.29 산하 6개 전문분과 중 하나로 <b>120명 이상의 전문가</b>가 참여한다. 배출가스·연비·전동화 차량 동력 성능 등 환경·에너지 직결 주제를 총괄하며, 새 규제·시험방법이 필요할 때 논의 방향을 잡고 하위 실무그룹(IWG)의 작업 결과를 <b>기술적으로 검토하여 WP.29에 상정</b>한다. 연 2~3회 개최.</p>
+      </div>
+    </div>
+    <div class="orgarrow">▼<small>초안을 보고·검증</small></div>
+    <div class="orgcard t-eve">
+      <div class="orgband"><span class="tier">③ 실무 TF팀</span><span class="lvl">EVE IWG<small>Electric Vehicles and the Environment</small></span></div>
+      <div class="orgbody">
+        <div class="orgname">전기차 및 환경 비공식 실무그룹</div>
+        <p>GRPE 산하의 비공식 실무그룹(Informal Working Group). 특정 기술과제를 깊이 파고드는 전문가 집단(Task Force)으로, <b>UN GTR 21(복합 동력원 시스템 출력 측정)</b>·<b>UN GTR 22(전기차 배터리 내구성)</b> 등의 초안을 자동차 제조사와 각국 연구기관(한국 <b>자동차연구원</b>, 미국 <b>아르곤 국립연구소(ANL)</b> 등) 전문가들이 직접 연구·시뮬레이션하여 작성하는 최전선 조직이다. 2012년 미·일·EU(이후 중국·캐나다 합류) 제안으로 설치됐다.</p>
+      </div>
+    </div>
+    <div class="orgarrow">▼<small>연구·합의의 산물</small></div>
+    <div class="orgcard t-gtr">
+      <div class="orgband"><span class="tier">④ 최종 결과물</span><span class="lvl">GTR<small>Global Technical Regulation</small></span></div>
+      <div class="orgbody">
+        <div class="orgname">글로벌 기술 규정 <span>(예: UN GTR No. 21)</span></div>
+        <p>기구·회의체 이름이 아니라, 위 조직들의 오랜 연구·합의로 탄생한 <b>법적·기술적 규제 문서</b>. 1998년 UN 협정에 따라 제정되는 전 세계 공통 기준이다. 단 GTR 자체는 상호인정·구속력이 없어, 각국이 자국 법령(한국은 국토부 자동차관리법·성능기준 규칙, 환경부 고시 등)에 옮겨야 인증기준으로 효력을 가진다. <b>UN R177</b>은 이 GTR 21을 1958협정 형식승인 체계로 전환해 <b>구속력·상호인정</b>을 부여한 규정이다.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2><span class="num">B</span>규정이 탄생하는 업무 흐름</h2>
+  <div class="flow">
+    <div class="step"><div class="n">1</div><b>연구·초안 작성</b><div class="who">EVE 실무그룹</div><p>전동화 파워트레인 특성을 반영한 새 출력 측정 방법론(TP1/TP2) 등 기술 디테일을 연구해 문서 초안을 만든다.</p></div>
+    <div class="step"><div class="n">2</div><b>부서 검토</b><div class="who">GRPE</div><p>초안을 오염·에너지 분과에 보고해 기술적 타당성과 타 규정과의 정합성을 검토받는다.</p></div>
+    <div class="step"><div class="n">3</div><b>최종 승인</b><div class="who">WP.29</div><p>검토 완료된 최종안을 세계 포럼 총회에 올려 표결로 승인한다(GTR은 AC.3, 1958협정 규정은 AC.1).</p></div>
+    <div class="step"><div class="n">4</div><b>규정 발효</b><div class="who">GTR / UN Regulation</div><p>승인된 문서는 'UN GTR No. XX' 등 공식 번호를 받아 글로벌 표준으로 공표되고, 각국 법령에 반영된다.</p></div>
+  </div>
+
+  <h2><span class="num">C</span>UN R177이 걸어온 길 — 단계별 회의 이력</h2>
   <h3>1단계 (2012~2018) — EVE IWG 출범</h3>
   <p>규정의 뿌리는 <b>EVE IWG</b>(Electric Vehicles and the Environment)다. 2012년 3월 미국·일본·EU 제안(이후 중국 합류)으로 UNECE <b>GRPE</b>(오염·에너지 작업반) 산하에 설치됐고, 의장 미국·부의장 중국/일본·간사 캐나다 체제로 운영됐다. 초기에는 전 세계 전기차 환경규제 'Reference Guide'(2014) 작성이 주 업무였으며, 이후 <b>전동차 출력 결정(DEVP)</b> 과제로 분화됐다.</p>
 
   <h3>2단계 (2019~2021) — UN GTR No. 21 제정</h3>
-  <p>2019년 3월 AC.3가 이를 독립 GTR로 개발하기로 결정했고, EVE IWG는 여러 방식을 검토한 끝에 <b>ISO 1585(엔진 순출력 시험코드) 기반</b> 방식이 비교성·검증성에서 최선이라고 합의했다(제22차 회의). 2020년 11월 WP.29 채택, <b>2021년 1월 18일 UN GTR No. 21(DEVP)</b>로 글로벌 등록부에 등재되며 <b>TP1/TP2 골격</b>이 확립됐다. (2024-06-26 Amendment 1)</p>
+  <p>EVE IWG가 출력 결정(DEVP)을 우선 과제로 분화한 뒤, <b>2020년 6월 AC.3가 독립 GTR 개발 권한을 부여</b>했다(ECE/TRANS/WP.29/AC.3/57). EVE IWG는 여러 방식을 검토한 끝에 <b>ISO 1585(엔진 순출력 시험코드) 기반</b> 방식이 비교성·검증성에서 최선이라고 합의했다. GRPE 검토를 거쳐 <b>WP.29 제182차 회의(2020.11.10~12, 제네바)에서 AC.3가 채택</b>했고, <b>2021년 1월 18일 UN GTR No. 21(DEVP)</b>로 글로벌 등록부에 등재(ECE/TRANS/180/Add.21)되며 <b>TP1/TP2 골격</b>이 확립됐다. 이후 <b>WP.29 제193차(2024.6)에서 Amendment 1</b>이 채택됐다(2024-08 등재).</p>
 
   <h3>3단계 (2024~2025) — UN R177로 전환</h3>
   <p>GTR(1998협정)은 상호인정이 없고 각국이 자국법으로 옮겨야 효력이 생긴다. 형식승인·상호인정이 작동하는 <b>구속력 있는 규정</b>을 위해 GTR 21을 1958협정으로 이식한 것이 UN R177이다(작업문서 ECE/TRANS/WP.29/2025/25). <b>WP.29 195차(2025.3.4~7)</b>에서 채택(AC.1 표결 찬성 36·반대 0·기권 0), <b>2025년 9월 27일 발효</b>했다.</p>
 
   <div class="timeline">
-    <div class="tl"><div class="d">2012.03</div><div class="e">EVE IWG 설치 (미·일·EU 제안, GRPE 산하)</div></div>
-    <div class="tl"><div class="d">2019.03</div><div class="e">독립 GTR 개발 결정 (AC.3) · ISO 1585 기반 방식 합의</div></div>
-    <div class="tl"><div class="d">2020.11</div><div class="e">GTR 채택 (WP.29)</div></div>
-    <div class="tl"><div class="d">2021.01.18</div><div class="e">UN GTR No. 21 (DEVP) 글로벌 등록부 등재</div></div>
-    <div class="tl"><div class="d">2024.06.26</div><div class="e">GTR 21 Amendment 1</div></div>
-    <div class="tl"><div class="d">2025.03</div><div class="e">UN R177 채택 (WP.29 195차, AC.1 36-0-0)</div></div>
-    <div class="tl"><div class="d">2025.09.27</div><div class="e">UN R177 발효 (1958협정 부속서)</div></div>
+    <div class="tl"><div class="d">2012.03</div><div class="e">EVE IWG 설치 — WP.29 승인 (미·일·EU 제안, 이후 중국·캐나다 합류 / GRPE 산하)</div></div>
+    <div class="tl"><div class="d">2014</div><div class="e">전기차 환경규제 'Reference Guide' 발간 (EVE 1단계 성과)</div></div>
+    <div class="tl"><div class="d">2020.06</div><div class="e">DEVP 독립 GTR 개발 권한 부여 (AC.3, ECE/TRANS/WP.29/AC.3/57) · ISO 1585 기반 방식 합의</div></div>
+    <div class="tl"><div class="d">2020.11</div><div class="e">GTR 채택 — <b>WP.29 제182차</b> (AC.3, 제네바 11.10~12)</div></div>
+    <div class="tl"><div class="d">2021.01.18</div><div class="e">UN GTR No. 21 (DEVP) 글로벌 등록부 등재 (ECE/TRANS/180/Add.21)</div></div>
+    <div class="tl"><div class="d">2024.06</div><div class="e">GTR 21 Amendment 1 채택 — <b>WP.29 제193차</b> (2024-08 등재)</div></div>
+    <div class="tl"><div class="d">2025.03</div><div class="e">UN R177 채택 — <b>WP.29 제195차</b> (3.4~7, AC.1 표결 36-0-0)</div></div>
+    <div class="tl"><div class="d">2025.09.27</div><div class="e">UN R177 발효 (1958협정 부속서, E/ECE/TRANS/505/Rev.3/Add.176)</div></div>
   </div>
-  <div class="src"><b>출처</b> UNECE GTR21·EVE IWG, GAR(rules/309), WP.29/2025/25</div>
+  <div class="src"><b>출처</b> UNECE WP.29·GRPE·EVE IWG 문서, UN GTR No. 21 / R177 등록부, GAR(rules/309), ECE/TRANS/WP.29/2025/25 · AC.3/57</div>
 
   <div class="pagenav"><a href="index.html#conditions">← 규정 이해</a><a href="debate.html">다음: 기술 논의·쟁점 →</a></div>
 </div>
-<footer>자동차 시스템 출력 평가 국제기준 국내도입 연구 · 정보 허브 v0.3 · 한양대학교 ERICA</footer>
+<footer>자동차 시스템 출력 평가 국제기준 국내도입 연구 · 정보 허브 v0.4 · 한양대학교 ERICA</footer>
 </main>
 </div>
 <script src="nav.js"></script>
